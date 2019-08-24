@@ -22,10 +22,10 @@ var config = {
     $("#add-user").on("click", function(event) {
         event.preventDefault();
 
-        name = $("#name-input").val().trim();
-        role = $("#name-input").val().trim();
-        start = $("#name-input").val().trim();
-        rate = $("#name-input").val().trim();
+        name = $("#name").val().trim();
+        role = $("#role").val().trim();
+        start = $("#startDate").val().trim();
+        rate = $("#rate").val().trim();
 
         database.ref().push({
             name: name,
