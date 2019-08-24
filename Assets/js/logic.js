@@ -1,11 +1,11 @@
 var config = {
-  apiKey: "AIzaSyCNnK2Ov2B25tpBRbjGXxabroetentzhLk",
-  authDomain: "group-timesheet-e38f8.firebaseapp.com",
-  databaseURL: "https://group-timesheet-e38f8.firebaseio.com",
-  projectId: "group-timesheet-e38f8",
+  apiKey: "AIzaSyBiQCsDUjJilrvweoED7m46QqwzKHnTUno",
+  authDomain: "bootcamp-f7917.firebaseapp.com",
+  databaseURL: "https://bootcamp-f7917.firebaseio.com",
+  projectId: "bootcamp-f7917",
   storageBucket: "",
-  messagingSenderId: "23194750837",
-  appId: "1:23194750837:web:f4e659b3140573c7"
+  messagingSenderId: "769832395610",
+  appId: "1:769832395610:web:654fe91e37a4b1cb"
 };
 
 firebase.initializeApp(config);
@@ -24,6 +24,8 @@ $("#add-user").on("click", function (event) {
         role = $("#role").val().trim();
         start = $("#startDate").val().trim();
         rate = $("#rate").val().trim();
+
+        console.log(name,role,start, rate);
 
   database.ref().push({
     name: name,
