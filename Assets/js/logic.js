@@ -1,11 +1,11 @@
 var config = {
-  apiKey: "AIzaSyDQKbPg7RJ8-EZY8ncKG9FNtCqgx7Mw5Cs",
-  authDomain: "project-yore-d8dc1.firebaseapp.com",
-  databaseURL: "https://project-yore-d8dc1.firebaseio.com",
-  projectId: "project-yore-d8dc1",
+  apiKey: "AIzaSyCNnK2Ov2B25tpBRbjGXxabroetentzhLk",
+  authDomain: "group-timesheet-e38f8.firebaseapp.com",
+  databaseURL: "https://group-timesheet-e38f8.firebaseio.com",
+  projectId: "group-timesheet-e38f8",
   storageBucket: "",
-  messagingSenderId: "38663053147",
-  appId: "1:38663053147:web:94eb7c21c5c5f228"
+  messagingSenderId: "23194750837",
+  appId: "1:23194750837:web:f4e659b3140573c7"
 };
 
 firebase.initializeApp(config);
@@ -20,17 +20,10 @@ var rate = "";
 $("#add-user").on("click", function (event) {
   event.preventDefault();
 
-<<<<<<< HEAD
         name = $("#name").val().trim();
         role = $("#role").val().trim();
         start = $("#startDate").val().trim();
         rate = $("#rate").val().trim();
-=======
-  name = $("#name").val().trim();
-  role = $("#role").val().trim();
-  start = $("#startDate").val().trim();
-  rate = $("#rate").val().trim();
->>>>>>> 0bc307ced68d6d4c3bcad2522d21e738723be878
 
   database.ref().push({
     name: name,
