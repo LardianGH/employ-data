@@ -1,52 +1,55 @@
 var config = {
-    apiKey: "AIzaSyDQKbPg7RJ8-EZY8ncKG9FNtCqgx7Mw5Cs",
-    authDomain: "project-yore-d8dc1.firebaseapp.com",
-    databaseURL: "https://project-yore-d8dc1.firebaseio.com",
-    projectId: "project-yore-d8dc1",
-    storageBucket: "",
-    messagingSenderId: "38663053147",
-    appId: "1:38663053147:web:94eb7c21c5c5f228"
-  };
+  apiKey: "AIzaSyDQKbPg7RJ8-EZY8ncKG9FNtCqgx7Mw5Cs",
+  authDomain: "project-yore-d8dc1.firebaseapp.com",
+  databaseURL: "https://project-yore-d8dc1.firebaseio.com",
+  projectId: "project-yore-d8dc1",
+  storageBucket: "",
+  messagingSenderId: "38663053147",
+  appId: "1:38663053147:web:94eb7c21c5c5f228"
+};
 
-  firebase.initializeApp(config);
+firebase.initializeApp(config);
 
-    var database = firebase.database();
+var database = firebase.database();
 
-    var name = "";
-    var role = ""
-    var start = "";
-    var months = "";
-    var rate = "";
-    var total = "";
+var name = "";
+var role = ""
+var start = "";
+var rate = "";
 
-    $("#add-user").on("click", function(event) {
-        event.preventDefault();
+$("#add-user").on("click", function (event) {
+  event.preventDefault();
 
+<<<<<<< HEAD
         name = $("#name").val().trim();
         role = $("#role").val().trim();
         start = $("#startDate").val().trim();
         rate = $("#rate").val().trim();
+=======
+  name = $("#name").val().trim();
+  role = $("#role").val().trim();
+  start = $("#startDate").val().trim();
+  rate = $("#rate").val().trim();
+>>>>>>> 0bc307ced68d6d4c3bcad2522d21e738723be878
 
-        database.ref().push({
-            name: name,
-            role: role,
-            start: start,
-            rate: rate,
-          });
+  database.ref().push({
+    name: name,
+    role: role,
+    start: start,
+    rate: rate,
+  });
 
 
-    })
+})
 
-    database.ref().on("child_added", function(snapshot) {
+database.ref().on("child_added", function (snapshot) {
 
-        var sv = snapshot.val();
+  var sv = snapshot.val();
+  console.log(sv.name);
+  console.log(sv.role);
+  console.log(sv.start);
+  console.log(sv.months);
 
-      
-        console.log(sv.name);
-        console.log(sv.role);
-        console.log(sv.start);
-        console.log(sv.months);
-
-    })
+})
 
 
