@@ -20,12 +20,12 @@ var rate = "";
 $("#add-user").on("click", function (event) {
   event.preventDefault();
 
-        name = $("#name").val().trim();
-        role = $("#role").val().trim();
-        start = $("#startDate").val().trim();
-        rate = $("#rate").val().trim();
+  name = $("#name").val().trim();
+  role = $("#role").val().trim();
+  start = $("#startDate").val().trim();
+  rate = $("#rate").val().trim();
 
-        console.log(name,role,start, rate);
+  console.log(name, role, start, rate);
 
   database.ref().push({
     name: name,
